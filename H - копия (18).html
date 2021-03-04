@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test JS </title>
+    <script>
+    function testjs(){
+    //document.write('Js успешно запустился');
+    document.getElementById('out_rez').append('Js успешно запустился');
+    }
+        
+function test_a(){
+     document.getElementById('out_rez_a').append('Js из тега а успешно запустился');
+}
+    </script>    
+</head>
+<body>
+    <h1>TEST JS</h1>
+    
+    <button onclick="testjs()">Запустить функцию джаваскрипт</button>
+    
+    <div id='out_rez'></div>
+    
+    <a href="#" onclick="test_a()">Send</a>
+        <div id='out_rez_a'></div>
+
+</body>
+</html>
